@@ -89,7 +89,20 @@ Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=R
             }
         }
 
-
+        private void btnAddProduct_Click(object sender, RoutedEventArgs e)
+        {
+            var factory = CreateSessionFactory();
+            using (var session = factory.OpenSession())
+            {
+                var product = new Product
+                {
+                    Name = txtProductName.Text,
+                    UnitPrice = decimal.Parse(txtProductUnitPrice.Text),
+                    ReorderLevel = int.Parse(txtProductReorderLevel.Text)
+                };
+                session.Save(product);
+            }
+        }
         private void btnLoadCategories_Click(object sender, RoutedEventArgs e)
         {
             var factory = CreateSessionFactory();
@@ -102,6 +115,21 @@ Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=R
                 lstCategories.DisplayMemberPath = "Name";
             }
         }
+
+       
+        private void btnLoadProducts_Click(object sender, RoutedEventArgs e)
+        {
+            var factory = CreateSessionFactory();
+            using (var session = factory.OpenSession())
+            {
+                var products = session.Query<Product>()
+                .OrderBy(p => p.Name)
+                .ToList();
+                lstProducts.ItemsSource = products;
+                lstProducts.DisplayMemberPath = "Name";
+            }
+        }
+
 
         private static void CreateSchema(Configuration cfg)
         {

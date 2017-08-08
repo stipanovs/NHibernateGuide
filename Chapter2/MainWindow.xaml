@@ -6,50 +6,59 @@
         xmlns:local="clr-namespace:Chapter2"
         mc:Ignorable="d"
         Title="MainWindow" Height="334.914" Width="513.251">
-    <Grid>
+    <Grid Margin="0,2,0,-2">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Button x:Name="btnCreateDatabase"
          Content="Create Database"
-         Click="btnCreateDatabase_Click" Margin="0,0,371,73" Grid.Row="1"/>
+         Click="btnCreateDatabase_Click" Margin="0,0,371,80" Grid.Row="1"/>
         <Button x:Name="btnCreateSessionFactory"
          Content="Create Session Factory"
          Click="btnCreateSessionFactory_Click"
-         Grid.Row="1" Margin="0,29,371,46"/>
+         Grid.Row="1" Margin="0,31,371,50"/>
         <Button x:Name="btnCreateSession"
          Content="Create Session"
          Click="btnCreateSession_Click"
-         Grid.Row="1" Margin="0,57,371,18"/>
-        <TextBlock Text="Category Name:" Margin="192,4,221,73" Grid.Row="1"/>
+         Grid.Row="1" Margin="0,61,371,19"/>
+        <TextBlock Text="Category Name:" Margin="196,4,217,73" Grid.Row="1"/>
         <TextBlock Text="Category Description:"
-         Grid.Row="1" Margin="171,31,220,45"/>
+         Grid.Row="1" Margin="171,26,220,53"/>
         <TextBox x:Name="txtCategoryName"
-         Grid.Row="1" Margin="289,4,0,73"/>
+         Grid.Row="1" Margin="289,4,0,80"/>
         <TextBox x:Name="txtCategoryDescription"
-         Grid.Row="1" Margin="289,29,0,46"/>
+         Grid.Row="1" Margin="289,28,0,54"/>
         <Button x:Name="btnAddCategory"
          Content="Add Category"
-         Click="btnAddCategory_Click" Grid.Row="1" Margin="415,60,2,15" RenderTransformOrigin="0.606,0.552" />
+         Click="btnAddCategory_Click" Grid.Row="1" Margin="417,53,0,30" RenderTransformOrigin="0.606,0.552" />
 
         <Button x:Name="btnLoadCategories"
          Content="Load Categories"
          Grid.Row="1"
-         Click="btnLoadCategories_Click" Margin="0,84,371,-12" />
+         Click="btnLoadCategories_Click" Margin="0,139,371,-54" />
         <ListBox x:Name="lstCategories"
-         Grid.Row="1" Margin="0,139,371,-184" Height="139" VerticalAlignment="Top"/>
+         Grid.Row="1" Margin="0,165,371,-180" Height="121" VerticalAlignment="Top"/>
 
-        <TextBlock Text="Product Name:" Margin="197,91,224,-9" Grid.Row="1"/>
-        <TextBlock Text="Product Unit Price:"
-         Grid.Row="1" Margin="180,115,227,-39"/>
+        <TextBlock Text="Product Name:" Margin="197,76,224,6" Grid.Row="1"/>
+        <TextBlock Text="Product Unit Price:" Grid.Row="1" Margin="180,96,227,-10"/>
+        <TextBlock Text="Product ReorderLevel:" Grid.Row="1" Margin="162,117,222,-34"/>
         <TextBox x:Name="txtProductName"
-         Grid.Row="1" Margin="289,89,0,-9"/>
+         Grid.Row="1" Margin="289,77,0,8"/>
         <TextBox x:Name="txtProductUnitPrice"
-         Grid.Row="1" Margin="289,111,0,-31"/>
+         Grid.Row="1" Margin="289,98,0,-12"/>
+        <TextBox x:Name="txtProductReorderLevel"
+         Grid.Row="1" Margin="289,120,0,-34"/>
         <Button x:Name="btnAddProduct"
          Content="Add Product"
-         Click="btnAddProduct_Click" Grid.Row="1" Margin="414,167,3,-91" RenderTransformOrigin="0.606,0.552" />
+         Click="btnAddProduct_Click" Grid.Row="1" Margin="414,141,3,-58" RenderTransformOrigin="0.606,0.552" />
+
+        <Button x:Name="btnLoadProducts"
+         Content="Load Products"
+         Grid.Row="1"
+         Click="btnLoadProducts_Click" Margin="146,139,225,-55" />
+        <ListBox x:Name="lstProducts"
+         Grid.Row="1" Margin="149,165,227,-180"/>
 
 
     </Grid>
