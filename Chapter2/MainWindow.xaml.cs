@@ -26,9 +26,13 @@ namespace Chapter2
     /// </summary>
     public partial class MainWindow : Window
     {
-        const string connString =
-        @"Data Source=MDDSK40044;Initial Catalog=NH3BeginnersGuide;Integrated Security=True;
-Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private const string connString =
+            @"Data Source=.;Initial Catalog=NH3BeginnersGuide;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        // string connection Amdaris
+       // @"Data Source=MDDSK40044;Initial Catalog=NH3BeginnersGuide;Integrated Security=True;
+       //     Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -48,6 +52,8 @@ Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=R
                      .BuildSessionFactory();
         }
 
+
+        // creaza tabelele
         private void btnCreateDatabase_Click(object sender, RoutedEventArgs e)
         {
             
