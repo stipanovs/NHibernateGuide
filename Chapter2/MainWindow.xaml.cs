@@ -45,7 +45,7 @@ namespace Chapter2
         {
             return    Fluently.Configure()
                      .Database(MsSqlConfiguration
-                     .MsSql2008
+                     .MsSql2012
                      .ConnectionString(connString))
                      .Mappings(m => m.FluentMappings
                      .AddFromAssemblyOf<ProductMap>())

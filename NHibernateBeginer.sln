@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter2", "Chapter2\Chapter2.csproj", "{B67A5229-9DB9-447B-AEAB-DD15DD26BBE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetExample", "AdoNetExample\AdoNetExample.csproj", "{5EF05CB8-D6A0-4039-B01F-6BA005F78BA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderingSystem", "OrderingSystem\OrderingSystem.csproj", "{821E23AF-3984-4054-A1D8-B47E9CBE4301}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderingSystem", "OrderingSystem\OrderingSystem.csproj", "{C679AC8A-0680-42CF-98DE-06D9B8AD779F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{5EF05CB8-D6A0-4039-B01F-6BA005F78BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EF05CB8-D6A0-4039-B01F-6BA005F78BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EF05CB8-D6A0-4039-B01F-6BA005F78BA2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{821E23AF-3984-4054-A1D8-B47E9CBE4301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{821E23AF-3984-4054-A1D8-B47E9CBE4301}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{821E23AF-3984-4054-A1D8-B47E9CBE4301}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{821E23AF-3984-4054-A1D8-B47E9CBE4301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C679AC8A-0680-42CF-98DE-06D9B8AD779F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C679AC8A-0680-42CF-98DE-06D9B8AD779F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C679AC8A-0680-42CF-98DE-06D9B8AD779F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C679AC8A-0680-42CF-98DE-06D9B8AD779F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

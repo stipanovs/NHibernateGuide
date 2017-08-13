@@ -6,15 +6,15 @@ namespace OrderingSystem.Domain
 {
     public abstract class Entity<T> where T : Entity<T>
     {
-        public Guid Id { get; private set; }
+        public int Id { get; private set; }
         private int? oldHashCode;
         public override bool Equals(object obj)
         {
             var other = obj as T;
             if (other == null) return false;
 
-            var thisIsNew = Equals(Id, Guid.Empty);
-            var otherIsNew = Equals(other.Id, Guid.Empty);
+            var thisIsNew = Equals(Id, 0);
+            var otherIsNew = Equals(other.Id, 0);
             if (thisIsNew && otherIsNew)
                 return ReferenceEquals(this, other);
 
@@ -29,7 +29,7 @@ namespace OrderingSystem.Domain
             // when this instance is new we use the base hash code
             // and remember it, so an instance can NEVER change its
             // hash code.
-            var thisIsNew = Equals(Id, Guid.Empty);
+            var thisIsNew = Equals(Id, 0);
             if (thisIsNew)
             {
                 oldHashCode = base.GetHashCode();

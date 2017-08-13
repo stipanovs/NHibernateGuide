@@ -11,7 +11,6 @@ namespace OrderingSystem.Domain
         public decimal UnitPrice { get; private set; }
         public int ReorderLevel { get; private set; }
         public bool Discontinued { get; private set; }
-        // serii
-        
+       
     }
 }
