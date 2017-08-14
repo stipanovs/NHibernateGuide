@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter2", "Chapter2\Chapter2.csproj", "{B67A5229-9DB9-447B-AEAB-DD15DD26BBE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetExample", "AdoNetExample\AdoNetExample.csproj", "{5EF05CB8-D6A0-4039-B01F-6BA005F78BA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderingSystem", "OrderingSystem\OrderingSystem.csproj", "{C679AC8A-0680-42CF-98DE-06D9B8AD779F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMappingSample", "AutoMappingSample\AutoMappingSample.csproj", "{B4403332-3891-4FDD-8472-38E8B4B4C59E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{C679AC8A-0680-42CF-98DE-06D9B8AD779F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C679AC8A-0680-42CF-98DE-06D9B8AD779F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C679AC8A-0680-42CF-98DE-06D9B8AD779F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4403332-3891-4FDD-8472-38E8B4B4C59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4403332-3891-4FDD-8472-38E8B4B4C59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4403332-3891-4FDD-8472-38E8B4B4C59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4403332-3891-4FDD-8472-38E8B4B4C59E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
